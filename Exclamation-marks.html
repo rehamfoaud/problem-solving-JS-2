@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclamation marks</title>
+</head>
+<body>
+    <script>
+        //Exclamation marks
+        // remove marks from end of string
+        //->    /!$/ => remove one mark from the last of string
+        // ->   /!/ => remove one mark from the firstof string
+        // ->  /!/g => remove all marks from the string
+
+        function marks(string){
+
+            return string.replace(/!$/," ")
+
+        }
+        console.log(marks("!hello!!!")) //!hello!!
+
+    </script>
+</body>
+</html>

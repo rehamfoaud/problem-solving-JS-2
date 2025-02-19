@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <script>
+        //welcome
+        // has own property
+        function great(language){
+            let languages ={
+                English: "Hello",
+                Arabic: "مرحبا",
+                French: "Bonjour",
+                Spanish: "Hola",
+                German: "Hallo",
+                Italian: "Ciao",
+                Chinese: "你好",  
+                Japanese: "こんにちは", 
+                Russian: "Привет", 
+                Turkish: "Merhaba"
+            }
+             if (languages.hasOwnProperty(language)){
+                return languages[language]
+             }
+             else{
+                return languages['English'] // hello
+             }
+        }
+        console.log(great("Turki")) // hello
+    </script>
+</body>
+</html>

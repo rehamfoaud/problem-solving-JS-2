@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P id="demo"></P>
+    <script>
+        //Remove String Spaces 
+        //  return str.trim() -> remove space from start and end
+        //return str.replace(/\s/g, '')-> remove all spaces  
+        //g-> global all string not the first only
+        // /.../=> regular expression
+        //  \s => يمثل كل  المسافات الفارغة
+
+        function noSpace(str){
+        //  return str.trim() // OR
+        //return str.replace(/\s/g, '') //OR
+        return str.split(" ").join("")
+        
+        }
+
+        console.log(noSpace("h e e l o"))
+        
+
+    </script>
+</body>
+</html>
